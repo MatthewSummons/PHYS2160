@@ -1,3 +1,4 @@
+# Test to determine scope of variables
 
 globalvar = 20
 

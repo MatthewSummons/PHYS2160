@@ -3,19 +3,29 @@
 
 class Card:
     """A Class representing Cards"""
+    
+    
     def __init__(self, rank, suit):
         self.rank = rank
         self.suit = suit
+    
+    
     def getRank(self):
         return self.rank
+    
+    
     def getSuit(self):
         return self.suit
+    
+    
     def value(self):
         # If Ace to 10
         if self.getRank() <= 10:
             return self.getRank()
         # Jacks, Queens, Kings valued at 10
         else: return 10
+    
+    
     def __str__(self):
         # Determine Suit of Cards
         if self.getSuit() == 'd':
@@ -34,7 +44,7 @@ class Card:
         }
         # Return Value of Card in String
         return valueDict[self.getRank()] + " of " + Suit
+    
+    
     def __repr__(self):
         return f"Card({self.getRank()},\'{self.getSuit()}\')"
-
-
