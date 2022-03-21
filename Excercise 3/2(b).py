@@ -17,6 +17,17 @@ data = np.array((
   (0.192, 0.50)
 ))
 
-print(data[:][:0])
-data = 1 / data[:0] 
+# P (Independent Variable), 1/V (Dependent Variable)
+Fit = Polynomial.fit(data[:,1], 1/data[:,0], deg=3)
 
+# Generate the graph
+fig, ax = plt.subplots()
+x = np.linspace(0, 0.6, 1000)
+ax.plot(x, Fit(x))
+# P and 1/V
+ax.plot(data[:, 1], 1/data[:, 0])
+
+ax.set_xlabel("Pressure (atm)")
+ax.set_ylabel("Volume (dm$^{-3}$)")
+
+plt.show()
