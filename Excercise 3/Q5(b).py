@@ -2,6 +2,7 @@
 # Model Temperature/Intensity
 # Created by Shaheer Ziya
 
+from turtle import color
 import matplotlib.pyplot as plt
 import numpy as np
 Polynomial = np.polynomial.Polynomial
@@ -25,10 +26,15 @@ Fit = Polynomial.fit(T, I, Degree, w=Weights)
 
 
 fig, ax = plt.subplots()
-ax.errorbar(T, I, sigma, capsize=3)
+x = np.linspace(250, 650, 100000)
+ax.plot(x, Fit(x), label="Fit")
+ax.errorbar(T, I, sigma, marker="o", color='r', capsize=3, label="Data")
 
 plt.title("Intensity Against Temperature")
 ax.set_xlabel("Temperature / K")
 ax.set_ylabel("Intensity / $Wm^{-2}$")
+ax.grid()
+ax.legend()
+
 
 plt.show()
