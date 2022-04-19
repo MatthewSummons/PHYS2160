@@ -12,8 +12,8 @@ from scipy.misc import derivative   # For numerical differentiation
 g, l = 9.81, 1.0
 
 # Initial angle and angular velocity of the pendulum (radians, radians/second)
-theta_0, omega_0 = 165 * np.pi /180, 0
-angleStr, wStr = "165^{\circ}", "0 \ rads^{-1}"
+theta_0, omega_0 = 20 * np.pi / 180, 0
+angleStr, wStr = "20^{\circ}", "0 \ rads^{-1}"
 
 # Number of steps for the numerical solution
 STEPS = 100000
