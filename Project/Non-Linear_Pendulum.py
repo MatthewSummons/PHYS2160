@@ -55,7 +55,7 @@ def main():
   r0 = np.array([theta_0, omega_0])  # Note that (-2π ≤ theta ≤ 2π) !!!
   
   # Solve the ODE numerically using scipy.integrate.odeint
-  sol = sp.odeint(dr_dt,r0, t)
+  sol = sp.odeint(dr_dt, r0, t)
 
   theta_of_t = sol[:, 0]
   omega_of_t = sol[:, 1]
