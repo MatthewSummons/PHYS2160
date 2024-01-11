@@ -1,11 +1,10 @@
-Introductory Computational Physics PHYS2160.
-  Introduction to Object Oriented Programming and Numerical Analysis (with numpy and matplotlib)
-
+# PHYS2160 Introductory Computational Physics
+Introduction to Object Oriented Programming and Numerical Analysis (with numpy and matplotlib).
 Please refer to the course outline for more details about the course and its schedule.
 
-Below are examples of pieces of some notable programs
+Below are examples of pieces of some notable programs.
 
-# Bubble Sort Implementation
+## Bubble Sort Implementation
 ```python
 def bubbleSort(arr):
     n = len(arr)
@@ -24,7 +23,7 @@ def bubbleSort(arr):
 
 ```
 
-# 3D Vectors Class
+## 3D Vectors Class
 
 ```python
 class Vec:
