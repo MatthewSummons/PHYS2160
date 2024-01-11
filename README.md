@@ -25,8 +25,6 @@ def bubbleSort(arr):
 ```
 
 # 3D Vectors Class
-[Source](Labs/Lab 2/VectorManip.py)
-
 
 ```python
 class Vec:
@@ -79,6 +77,3 @@ class Vec:
       result += (self.entries[i] * other.entries[i])
     return result
 ```
-
-
-
