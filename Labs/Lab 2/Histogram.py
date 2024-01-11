@@ -1,5 +1,5 @@
 # Histogram.py
-# Print a histogram for some data in a give format
+# Print a histogram for some data in a given format
 # Created by Shaheer Ziya
 
 # Hard Code the tabular data
